@@ -1,0 +1,2 @@
+class BanksList < ApplicationRecord
+end
