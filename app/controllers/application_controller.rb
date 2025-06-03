@@ -12,7 +12,6 @@ class ApplicationController < ActionController::API
     def authenticate_request
         authorization_header = request.headers['Authorization']
         if authorization_header.blank?
-            Rails.logger.info "ヘッダー"
             render json: { errors: 'Unauthorized' }, status: :unauthorized
             return
         end
