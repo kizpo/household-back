@@ -6,7 +6,7 @@ FROM ruby:3.3.4
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
 
 # 作業ディレクトリを設定
-WORKDIR /myapp
+WORKDIR /app
 
 # GemfileとGemfile.lockをコピー
 COPY Gemfile Gemfile.lock ./
