@@ -5,3 +5,9 @@ CSV.foreach(Rails.root.join('db/Bank_list.csv'), headers: true) do |row|
         name: row['name']
     })
 end
+
+User.create!(
+    name: "デモユーザー",
+    email: "demo@example.com",
+    password: "password123",
+)
